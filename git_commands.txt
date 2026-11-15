@@ -1,0 +1,131 @@
+GIT & GITHUB WORKFLOW ASSIGNMENT
+================================
+
+STEP 1: LOCAL REPOSITORY SETUP
+
+1. git init -b main
+   Initializes a new local Git repository with main as
+   the default branch.
+
+2. git status
+   Displays the current repository state, including
+   modified, staged, and untracked files.
+
+
+STEP 2: GIT WORKFLOW EXECUTION
+
+3. git add .
+   Stages all new and modified files for committing.
+
+4. git commit -m "Initial commit: Add index and about pages"
+   Creates the first commit containing the initial
+   HTML project files.
+
+5. git log --oneline
+   Displays commit history in a compact format.
+
+6. git add index.html
+   Stages changes made to index.html.
+
+7. git commit -m "Update homepage content"
+   Records the updated homepage in Git history.
+
+8. git branch feature
+   Creates a new branch named feature.
+
+9. git switch feature
+   Switches the working branch to feature.
+
+10. git branch
+    Lists local branches and identifies the active branch.
+
+11. git add about.html
+    Stages changes made to about.html.
+
+12. git commit -m "Add feature section to about page"
+    Commits the feature changes on the feature branch.
+
+13. git switch main
+    Switches back to the main branch.
+
+14. git merge feature
+    Merges changes from feature into main.
+
+15. git log --oneline --graph --all --decorate
+    Displays the commit history with branch references
+    and a graphical representation.
+
+
+STEP 3: GITIGNORE IMPLEMENTATION
+
+16. git status --short
+    Displays a concise summary of repository changes.
+
+17. git check-ignore debug.log temp/sample.txt
+    Verifies that the log file and temporary folder
+    are excluded by .gitignore.
+
+18. git add .gitignore
+    Stages the .gitignore configuration file.
+
+19. git commit -m "Add gitignore for logs and temporary files"
+    Records the ignore rules in repository history.
+
+
+STEP 4: UNDO OPERATION
+
+20. git commit -m "Add temporary content for undo demonstration"
+    Creates an additional commit containing a temporary
+    change to index.html.
+
+21. git log -1 --oneline
+    Displays the most recent commit.
+
+22. git revert --no-edit HEAD
+    Reverses the most recent commit by creating a new
+    commit without opening an editor.
+
+23. git log --oneline -4
+    Displays the latest four commits to verify the revert.
+
+24. git show --stat HEAD
+    Shows the files and change statistics associated
+    with the latest commit.
+
+
+STEP 5: GITHUB INTEGRATION
+
+25. git remote add origin https://github.com/YOUR_USERNAME/git-workflow-assignment.git
+    Connects the local repository to the remote
+    GitHub repository named origin.
+
+26. git remote -v
+    Displays the configured remote repository URLs.
+
+27. git push -u origin main
+    Pushes the main branch to GitHub and establishes
+    its upstream tracking relationship.
+
+28. git push origin feature
+    Pushes the feature branch to GitHub.
+
+
+STEP 6: COMMAND DOCUMENTATION
+
+29. git add git_commands.txt
+    Stages the Git command documentation file.
+
+30. git commit -m "Add Git command documentation"
+    Commits the documentation file to the repository.
+
+31. git push origin main
+    Pushes the documentation commit to GitHub.
+
+
+CONCLUSION
+==========
+
+Successfully demonstrated local repository setup,
+committing changes, branching, merging, .gitignore
+implementation, undoing a commit using git revert,
+and pushing the project to a public GitHub repository.
